@@ -1,0 +1,11 @@
+{
+  "name": "developer-portfolio",
+  "version": "1.0.0",
+  "description": "Shubh Singh - Developer Portfolio",
+  "scripts": {
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}

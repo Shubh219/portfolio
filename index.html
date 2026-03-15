@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubh Singh - Developer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Shubh Singh, a CSE Student, Machine Learning & Full Stack Enthusiast.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- EmailJS SDK (v3) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <div class="background-grid"></div>
+    <canvas id="particle-canvas"></canvas>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Shubh<span class="highlight">&lt;/&gt;</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#training" class="nav-link">Training</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#mentors" class="nav-link">Mentors</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero section">
+            <div class="hero-content">
+                <h1 class="hero-title reveal">Hi, I'm Shubh</h1>
+                <h2 class="hero-subtitle reveal delay-1">
+                    <span id="typewriter"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-desc reveal delay-2">Building intelligent and modern digital solutions with creativity
+                    and precision.
+                    A Computer Science student passionate about developing impactful systems using AI, Machine Learning,
+                    and Web Technologies.</p>
+                <div class="hero-buttons reveal delay-3">
+                    <a href="#contact" class="btn primary-btn">Hire Me <i class="fas fa-arrow-right"></i></a>
+                    <div class="social-icons">
+                        <a href="https://github.com/Shubh219" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/shubh-singh-810583285/" target="_blank"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:singhshubh2231@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-container reveal delay-2">
+                <div class="glowing-ring"></div>
+                <img src="IMG-nobg.png" alt="Shubh Singh" class="hero-profile-img">
+                <div class="tech-icon floating-icon html-icon" title="HTML5"><i class="fab fa-html5"></i></div>
+                <div class="tech-icon floating-icon python-icon" title="Python"><i class="fab fa-python"></i></div>
+                <div class="tech-icon floating-icon react-icon" title="React"><i class="fab fa-react"></i></div>
+                <div class="tech-icon floating-icon node-icon" title="Node.js"><i class="fab fa-node-js"></i></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="section-header">
+                <h2 class="section-title reveal">About <span class="highlight">Me</span></h2>
+                <p class="section-subtitle reveal delay-1">A passionate developer dedicated to building innovative
+                    software
+                    solutions.</p>
+                <div class="title-underline reveal delay-2"></div>
+            </div>
+            <div class="about-grid reveal delay-1">
+
+                <!-- Left Column: Image -->
+                <div class="about-col-left">
+                    <div class="about-image-container reveal">
+                        <div class="about-glowing-ring"></div>
+                        <img src="IMG-20230805-WA0008.jpg" alt="Shubh Singh" class="about-img">
+                        <div class="glow-effect"></div>
+                        <!-- Floating Tech Icons around About profile -->
+                        <div class="tech-icon floating-icon about-html-icon" title="HTML5"><i class="fab fa-html5"></i>
+                        </div>
+                        <div class="tech-icon floating-icon about-react-icon" title="React"><i class="fab fa-react"></i>
+                        </div>
+                        <div class="tech-icon floating-icon about-py-icon" title="Python"><i class="fab fa-python"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Text and Features -->
+                <div class="about-text-content">
+                    <h3 class="about-subtitle reveal delay-1">Hi, I'm <span class="highlight-pink">Shubh Singh</span>
+                    </h3>
+
+
+
+                    <div class="about-paragraphs reveal delay-3">
+                        <p class="about-desc">
+                            I am a Computer Science and Engineering student driven by innovation, with a strong
+                            interest in
+                            <strong class="highlight">Machine Learning</strong> and <strong class="highlight">Full Stack
+                                Development</strong>.
+                        </p>
+                        <p class="about-desc">
+                            I build scalable, modern web applications and design intelligent systems that solve
+                            real-world problems. My core focus lies in utilizing <strong class="highlight">NLP</strong>,
+                            creating advanced recommendation systems, and building seamless digital experiences.
+                        </p>
+                    </div>
+
+                    <!-- Tech Stack Badges -->
+                    <div class="tech-stack-badges reveal delay-4">
+                        <span class="badge">Python</span>
+                        <span class="badge">ML</span>
+                        <span class="badge">React</span>
+                        <span class="badge">Node</span>
+                        <span class="badge">NLP</span>
+                        <span class="badge">C++</span>
+                    </div>
+
+                    <!-- Personal Info Cards Grid -->
+                    <div class="about-stats-container">
+                        <!-- Row 1: 3 Cards -->
+                        <div class="about-stats-row stats-row-1 reveal delay-5">
+                            <div class="stat-card vertical-stat">
+                                <h3 class="stat-num"><i class="fas fa-map-marker-alt"></i></h3>
+                                <p class="stat-text">Jalandhar, Punjab</p>
+                            </div>
+                            <div class="stat-card vertical-stat">
+                                <h3 class="stat-num"><i class="fas fa-graduation-cap"></i></h3>
+                                <p class="stat-text">B.Tech CSE</p>
+                            </div>
+                            <div class="stat-card vertical-stat">
+                                <h3 class="stat-num"><i class="fas fa-envelope"></i></h3>
+                                <p class="stat-text">
+                                    <a href="mailto:singhshubh2231@gmail.com"
+                                        class="email-link">singhshubh2231@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Row 2: CV & Status -->
+                        <div class="about-stats-row stats-row-2 reveal delay-6">
+                            <a href="cv/Shubh_Singh_CV.pdf" download class="stat-card vertical-stat cv-stat-card">
+                                <h3 class="stat-num"><i class="fas fa-download"></i></h3>
+                                <p class="stat-text highlight-cv">Download CV</p>
+                            </a>
+                            <div class="stat-card vertical-stat">
+                                <h3 class="stat-num"><i class="fas fa-briefcase"></i></h3>
+                                <p class="stat-text highlight-green">Available for Hire</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="section-header skills-header">
+                <h2 class="section-title reveal">My <span class="highlight">Skills</span></h2>
+                <p class="section-subtitle reveal delay-1">Technologies and tools I use to build intelligent systems.
+                </p>
+                <div class="title-underline reveal delay-2"></div>
+            </div>
+            <div class="network-stars"></div>
+            <div class="skills-layout">
+                <!-- Left Column: Skill Cards -->
+                <div class="skills-container-left">
+                    <div class="skill-category reveal">
+                        <h3><i class="fas fa-code highlight"></i> Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category reveal delay-1">
+                        <h3><i class="fas fa-layer-group highlight"></i> Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Keras</span>
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Node.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-category reveal delay-2">
+                        <h3><i class="fas fa-tools highlight"></i> Tools & Platforms</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Google Colab</span>
+                            <span class="skill-tag">LeetCode</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Orbit Animation -->
+                <div class="orbit-network-container reveal delay-2">
+                    <div class="orbit-center">
+                        <div class="center-content">
+                            <i class="fas fa-brain"></i>
+                            <span>Machine<br>Learning</span>
+                        </div>
+                    </div>
+
+                    <div class="orbit-path inner-path"></div>
+                    <div class="orbit-path outer-path"></div>
+
+                    <!-- Inner Orbit (ML Technologies) -->
+                    <div class="orbit-ring inner-orbit">
+                        <!-- Python -->
+                        <div class="orbit-node-wrapper" style="--rot: 0deg; --radius: 155px;">
+                            <div class="orbit-icon-rotate">
+                                <div class="orbit-icon" data-title="Python">
+                                    <i class="fab fa-python" style="color: #3776AB;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- NumPy -->
+                        <div class="orbit-node-wrapper" style="--rot: 72deg; --radius: 155px;">
+                            <div class="orbit-icon-rotate">
+                                <div class="orbit-icon" data-title="NumPy">
+                                    <span class="text-icon" style="color: #013243;">Nu</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pandas -->
+                        <div class="orbit-node-wrapper" style="--rot: 144deg; --radius: 155px;">
+                            <div class="orbit-icon-rotate">
+                                <div class="orbit-icon" data-title="Pandas">
+                                    <span class="text-icon" style="color: #150458;">Pd</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Scikit-learn -->
+                        <div class="orbit-node-wrapper" style="--rot: 216deg; --radius: 155px;">
+                            <div class="orbit-icon-rotate">
+                                <div class="orbit-icon" data-title="Scikit-Learn">
+                                    <span class="text-icon" style="color: #F7931E;">Sk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keras -->
+                        <div class="orbit-node-wrapper" style="--rot: 288deg; --radius: 155px;">
+                            <div class="orbit-icon-rotate">
+                                <div class="orbit-icon" data-title="Keras">
+                                    <span class="text-icon" style="color: #D00000;">K</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Outer Orbit (Dev Tools) -->
+                    <div class="orbit-ring outer-orbit">
+                        <!-- React -->
+                        <div class="orbit-node-wrapper" style="--rot: 0deg; --radius: 270px;">
+                            <div class="orbit-icon-rotate">
+                                <div class="orbit-icon" data-title="React">
+                                    <i class="fab fa-react" style="color: #61DAFB;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Node.js -->
+                        <div class="orbit-node-wrapper" style="--rot: 60deg; --radius: 270px;">
+                            <div class="orbit-icon-rotate">
+                                <div class="orbit-icon" data-title="Node.js">
+                                    <i class="fab fa-node-js" style="color: #339933;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- HTML -->
+                        <div class="orbit-node-wrapper" style="--rot: 120deg; --radius: 270px;">
+                            <div class="orbit-icon-rotate">
+                                <div class="orbit-icon" data-title="HTML">
+                                    <i class="fab fa-html5" style="color: #E34F26;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CSS -->
+                        <div class="orbit-node-wrapper" style="--rot: 180deg; --radius: 270px;">
+                            <div class="orbit-icon-rotate">
+                                <div class="orbit-icon" data-title="CSS">
+                                    <i class="fab fa-css3-alt" style="color: #1572B6;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- GitHub -->
+                        <div class="orbit-node-wrapper" style="--rot: 240deg; --radius: 270px;">
+                            <div class="orbit-icon-rotate">
+                                <div class="orbit-icon" data-title="GitHub">
+                                    <i class="fab fa-github" style="color: #fff;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- LeetCode -->
+                        <div class="orbit-node-wrapper" style="--rot: 300deg; --radius: 270px;">
+                            <div class="orbit-icon-rotate">
+                                <div class="orbit-icon" data-title="LeetCode">
+                                    <i class="fas fa-code" style="color: #FFA116;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="section-header">
+                <h2 class="section-title reveal">Featured <span class="highlight">Projects</span></h2>
+                <p class="section-subtitle reveal delay-1">Showcasing my journey through code, data, and creative
+                    problem-solving.</p>
+                <div class="title-underline reveal delay-2"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-content">
+                        <div class="project-date">April 2025</div>
+                        <h3 class="project-title">BiLSTM-CRF Based NER for Noisy OCR Land Records</h3>
+                        <p class="project-desc">Implemented a deep learning-based sequence labeling system using BiLSTM
+                            with CRF for domain-specific NER to extract key legal entities from land records.</p>
+                        <ul class="project-bullets">
+                            <li>Developed preprocessing pipeline to mitigate OCR noise</li>
+                            <li>Enhanced digital governance & document automation</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span><span>NLP</span><span>BiLSTM</span><span>OCR</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="Screenshot 2026-03-12 142622.png" class="btn project-btn view-screenshot-btn">
+                                🖼 Project Preview
+                            </a>
+                            <a href="https://github.com/Shubh219/BiLSTM-CRF-Based-NER-for-Noisy-OCR-Land-Records"
+                                target="_blank" class="btn project-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card reveal delay-1">
+                    <div class="project-content">
+                        <div class="project-date">April 2025</div>
+                        <h3 class="project-title">Automated Student Attendance System for Colleges</h3>
+                        <p class="project-desc">Developed an automated attendance system using supervised ML models and
+                            facial feature extraction with distance metrics for reliable identification.</p>
+                        <ul class="project-bullets">
+                            <li>Applied advanced data preprocessing</li>
+                            <li>Improved overall recognition accuracy significantly</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span><span>OpenCV</span><span>Scikit-learn</span><span>Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="Student Attendence2026-03-12 150809.png"
+                                class="btn project-btn view-screenshot-btn">
+                                🖼 Project Preview
+                            </a>
+                            <a href="https://github.com/Shubh219/ML-SIH-Project-Automated-Student-Attendance-Monitoring-and-Analytics-System-for-Colleges"
+                                target="_blank" class="btn project-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card reveal delay-2">
+                    <div class="project-content">
+                        <div class="project-date">March 2025</div>
+                        <h3 class="project-title">Student Recommendation System</h3>
+                        <p class="project-desc">Built a Machine Learning system recommending suitable academic subjects
+                            based on student profile and performance using a Random Forest classifier with 16 features.
+                        </p>
+                        <ul class="project-bullets">
+                            <li>Performed label encoding & feature selection</li>
+                            <li>Interactive UI using Streamlit for real-time recommendations</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span><span>Pandas</span><span>Streamlit</span><span>Seaborn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="recommendation 2026-03-12 155441.png" class="btn project-btn view-screenshot-btn">
+                                🖼 Project Preview
+                            </a>
+                            <a href="https://github.com/Shubh219/Student-Recommendation-System-project" target="_blank"
+                                class="btn project-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section">
+            <div class="section-header">
+                <h2 class="section-title reveal">My <span class="highlight">Education</span></h2>
+                <p class="section-subtitle reveal delay-1">My academic foundation and the milestones of my learning
+                    journey.
+                </p>
+                <div class="title-underline reveal delay-2"></div>
+            </div>
+            <div class="edu-container timeline reveal">
+                <!-- B.Tech -->
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="top: 38px;"></div>
+                    <div class="edu-card" style="margin-top: 0;">
+                        <div class="edu-icon-wrapper">
+                            <i class="fas fa-graduation-cap edu-icon"></i>
+                        </div>
+                        <div class="edu-content">
+                            <h3 class="edu-degree">B.Tech in Computer Science and Engineering</h3>
+                            <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Lovely Professional University</p>
+
+                            <div class="edu-meta" style="flex-wrap: wrap; gap: 10px; justify-content: flex-start;">
+                                <span class="edu-status" style="background: transparent; border-color: var(--primary); color: var(--text-light);">2023 – Present</span>
+                                <span class="edu-status">Currently Pursuing</span>
+                            </div>
+                        </div>
+
+                        <!-- Circular CGPA Indicator -->
+                        <div class="cgpa-circular-container">
+                            <div class="cgpa-circle-wrapper">
+                                <svg class="cgpa-svg" width="90" height="90">
+                                    <defs>
+                                        <linearGradient id="cgpa-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="var(--primary)" />
+                                            <stop offset="100%" stop-color="var(--secondary)" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle class="circle-bg" cx="45" cy="45" r="38"></circle>
+                                    <circle class="circle-progress" cx="45" cy="45" r="38"
+                                        style="stroke: url(#cgpa-gradient);"></circle>
+                                </svg>
+                                <div class="cgpa-number">
+                                    <span class="cgpa-value" data-target="7.33">0.00</span>
+                                </div>
+                            </div>
+                            <span class="cgpa-label">CGPA Out of 10</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- High School 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="top: 38px;"></div>
+                    <div class="edu-card" style="margin-top: 0;">
+                        <div class="edu-icon-wrapper">
+                            <i class="fas fa-school edu-icon"></i>
+                        </div>
+                        <div class="edu-content edu-split">
+                            <div class="edu-split-left">
+                                <h3 class="edu-degree">Little Step English High School</h3>
+                                <p class="edu-qualification">Intermediate</p>
+                            </div>
+                            <div class="edu-split-right">
+                                <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Borgaon, MP</p>
+                                <span class="edu-status">April 2021 – March 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- High School 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="top: 38px;"></div>
+                    <div class="edu-card" style="margin-top: 0;">
+                        <div class="edu-icon-wrapper">
+                            <i class="fas fa-school edu-icon"></i>
+                        </div>
+                        <div class="edu-content edu-split">
+                            <div class="edu-split-left">
+                                <h3 class="edu-degree">Kailashpat Singhania High School <span style="font-size: 0.85em; font-weight: 400; color: var(--text-muted);">(Raymond Ltd)</span></h3>
+                                <p class="edu-qualification">Matriculation</p>
+                            </div>
+                            <div class="edu-split-right">
+                                <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Vijaygram, MP</p>
+                                <span class="edu-status">April 2020 – March 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Training Section -->
+        <section id="training" class="training section">
+            <div class="section-header">
+                <h2 class="section-title reveal">My <span class="highlight">Training</span></h2>
+                <p class="section-subtitle reveal delay-1">Specialized programs and certifications that shaped my
+                    technical
+                    expertise.</p>
+                <div class="title-underline reveal delay-2"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">June 2025 - July 2025</div>
+                        <h3>Full Stack Training</h3>
+                        <h4>Lovely Professional University</h4>
+                        <p>Completed structured training covering frontend and backend basics. Built mini full-stack
+                            projects using React.js and Node.js, REST APIs, routing, state management, and basic
+                            authentication logic.</p>
+                        <div style="margin-top: 15px;">
+                            <a href="fullstack certificate2025-11-17 110101.png" class="view-screenshot-btn"
+                                style="padding: 6px 14px; font-size: 0.85rem; border-radius: 4px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">June 2024</div>
+                        <h3>Industrial Training</h3>
+                        <h4>Raymond Limited (Textile Division)</h4>
+                        <p>Gained hands-on exposure to IT Department workflows and industry-level systems. Demonstrated
+                            professional discipline, work ethic, and corporate communication standards.</p>
+                        <div style="margin-top: 15px;">
+                            <a href="raymond 2026-03-12 183616.png" class="view-screenshot-btn"
+                                style="padding: 6px 14px; font-size: 0.85rem; border-radius: 4px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates section">
+            <div class="section-header">
+                <h2 class="section-title reveal">My <span class="highlight">Certificates</span></h2>
+                <p class="section-subtitle reveal delay-1">Recognitions of my continuous learning and professional
+                    growth.
+                </p>
+                <div class="title-underline reveal delay-2"></div>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card reveal">
+                    <i class="fas fa-laptop-code cert-icon"></i>
+                    <div class="cert-info">
+                        <h3>Full Stack Training Certificate</h3>
+                        <p>Lovely Professional University</p>
+                        <div style="display: flex; gap: 15px; align-items: center; margin-top: 8px;">
+                            <span class="cert-date" style="margin-top: 0;">July 2025</span>
+                            <a href="fullstack certificate2025-11-17 110101.png" class="view-screenshot-btn"
+                                style="padding: 4px 12px; font-size: 0.8rem; border-radius: 4px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card reveal delay-1">
+                    <i class="fas fa-cloud cert-icon"></i>
+                    <div class="cert-info">
+                        <h3>Cloud Computing - Elite Certificate</h3>
+                        <p>IIT Kharagpur, NPTEL</p>
+                        <div style="display: flex; gap: 15px; align-items: center; margin-top: 8px;">
+                            <span class="cert-date" style="margin-top: 0;">Oct 2025</span>
+                            <a href="cloud computing2026-03-12 184437.png" class="view-screenshot-btn"
+                                style="padding: 4px 12px; font-size: 0.8rem; border-radius: 4px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card reveal delay-1">
+                    <i class="fas fa-cogs cert-icon"></i>
+                    <div class="cert-info">
+                        <h3>Language Principle & Finite Automata Theory</h3>
+                        <p>Infosys</p>
+                        <div style="display: flex; gap: 15px; align-items: center; margin-top: 8px;">
+                            <span class="cert-date" style="margin-top: 0;">July 2025</span>
+                            <a href="commpuntation theory certificate.png" class="view-screenshot-btn"
+                                style="padding: 4px 12px; font-size: 0.8rem; border-radius: 4px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card reveal delay-2">
+                    <i class="fas fa-industry cert-icon"></i>
+                    <div class="cert-info">
+                        <h3>Industrial Training Certificate</h3>
+                        <p>Raymond Limited (Textile Division)</p>
+                        <div style="display: flex; gap: 15px; align-items: center; margin-top: 8px;">
+                            <span class="cert-date" style="margin-top: 0;">June 2024</span>
+                            <a href="raymond 2026-03-12 183616.png" class="view-screenshot-btn"
+                                style="padding: 4px 12px; font-size: 0.8rem; border-radius: 4px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card reveal delay-2">
+                    <i class="fas fa-laptop-code cert-icon"></i>
+                    <div class="cert-info">
+                        <h3>Web ka Hackthon - Hack Quest</h3>
+                        <p>blockseblock</p>
+                        <div style="display: flex; gap: 15px; align-items: center; margin-top: 8px;">
+                            <span class="cert-date" style="margin-top: 0;">March 2024</span>
+                            <a href="web ka hackthon certificate.png" class="view-screenshot-btn"
+                                style="padding: 4px 12px; font-size: 0.8rem; border-radius: 4px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mentor Feedback Section -->
+        <section id="mentors" class="mentors section">
+            <div class="section-header">
+                <h2 class="section-title reveal">What <span class="highlight">Mentors</span> Say</h2>
+                <p class="section-subtitle reveal delay-1">What professionals and mentors say about my work and
+                    dedication.
+                </p>
+                <div class="title-underline reveal delay-2"></div>
+            </div>
+            <div class="mentor-grid">
+                <!-- Card 1 -->
+                <div class="mentor-card reveal">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="mentor-feedback">"Shubh is a highly motivated individual with a sharp focus on Machine
+                        Learning. His ability to tackle complex NLP tasks and OCR noise mitigation is truly
+                        commendable."</p>
+                    <div class="mentor-project-label">BiLSTM-CRF Research</div>
+                    <div class="mentor-profile">
+                        <div class="mentor-avatar">DP</div>
+                        <div class="mentor-info">
+                            <h4 class="mentor-name">Dr. Pradeep Kumar</h4>
+                            <p class="mentor-role">Academic Supervisor, LPU</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="mentor-card reveal delay-1">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="mentor-feedback">"During his industrial training, Shubh demonstrated exceptional work
+                        ethic and professional discipline. His curiosity for IT workflows made him a standout trainee."
+                    </p>
+                    <div class="mentor-project-label">Industrial Training</div>
+                    <div class="mentor-profile">
+                        <div class="mentor-avatar">AS</div>
+                        <div class="mentor-info">
+                            <h4 class="mentor-name">Ashish Sharma</h4>
+                            <p class="mentor-role">HR Manager, Raymond Ltd.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="mentor-card reveal delay-2">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="mentor-feedback">"A quick learner who understands both frontend aesthetics and backend
+                        logic. His full-stack projects during training were built with solid architectural principles."
+                    </p>
+                    <div class="mentor-project-label">Full Stack Development</div>
+                    <div class="mentor-profile">
+                        <div class="mentor-avatar">AS</div>
+                        <div class="mentor-info">
+                            <h4 class="mentor-name">Amit Sharma</h4>
+                            <p class="mentor-role">Technical Lead, Training Div.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="section-header">
+                <h2 class="section-title reveal">Get in <span class="highlight">Touch</span></h2>
+                <p class="section-subtitle reveal delay-1">Let's discuss how we can build something amazing together.
+                </p>
+                <div class="title-underline reveal delay-2"></div>
+            </div>
+            <div class="contact-container reveal">
+                <!-- Left Column: Info Cards -->
+                <div class="contact-sidebar">
+                    <div class="contact-info-list">
+                        <div class="info-card">
+                            <div class="info-icon email-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <span class="info-label">EMAIL</span>
+                                <a href="mailto:singhshubh2231@gmail.com"
+                                    class="info-value">singhshubh2231@gmail.com</a>
+                                <p class="info-desc">Drop me an email anytime</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon phone-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <span class="info-label">PHONE</span>
+                                <a href="tel:+919098059953" class="info-value">+91 90980 59953</a>
+                                <p class="info-desc">Available for voice/whatsapp</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon loc-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <span class="info-label">LOCATION</span>
+                                <span class="info-value">Jalandhar, Punjab</span>
+                                <p class="info-desc">Open to remote worldwide</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon active-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="info-content">
+                                <span class="info-label">AVAILABILITY</span>
+                                <span class="info-value"><span class="status-dot"></span> Available for Work</span>
+                                <p class="info-desc">Currently taking new projects</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-connect">
+                        <h3>Connect with Me</h3>
+                        <div class="social-grid">
+                            <a href="https://github.com/Shubh219" target="_blank" class="social-item">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/shubh-singh-810583285/" target="_blank"
+                                class="social-item">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Form Card -->
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h3><i class="far fa-edit"></i> Send a Message</h3>
+                        <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+                    </div>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="user_name" id="user_name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="user_email" id="user_email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" rows="8" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn submit-btn-gradient" id="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span class="btn-text">Send Message</span>
+                        </button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Shubh Singh. Made with passion and dedication. ❤️</p>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Screenshot Preview">
+    </div>
+
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>
