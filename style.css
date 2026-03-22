@@ -1500,17 +1500,17 @@ main {
         gap: 15px;
         justify-content: center;
     }
-    
+
     .edu-split {
         flex-direction: column;
         text-align: center;
         justify-content: center;
     }
-    
+
     .edu-split-right {
         text-align: center;
     }
-    
+
     .edu-split-right .edu-location {
         justify-content: center;
     }
@@ -1632,6 +1632,7 @@ main {
     .cert-grid {
         grid-template-columns: 1fr;
     }
+
     .cert-card:last-child:nth-child(odd) {
         grid-column: auto;
         width: 100%;
@@ -2233,7 +2234,8 @@ footer {
 
 @media (max-width: 992px) {
     .hero {
-        flex-direction: column; /* Stacked: Text Top, Image Below */
+        flex-direction: column;
+        /* Stacked: Text Top, Image Below */
         text-align: center;
         padding-top: 130px;
         gap: 50px;
@@ -2509,6 +2511,14 @@ footer {
 }
 
 .close-modal:hover,
+.close-modal:focus {
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--primary-glow);
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+close-modal:hover,
 .close-modal:focus {
     color: var(--primary);
     text-shadow: 0 0 10px var(--primary-glow);
