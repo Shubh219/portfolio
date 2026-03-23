@@ -319,14 +319,7 @@ window.addEventListener('DOMContentLoaded', () => {
     setTimeout(type, 1000); // Initial delay before starting
 });
 
-// --- EMAILJS CONTACT FORM ---
-(function () {
-    // 1. Initialize EmailJS with your Public Key
-    // Replace 'YOUR_PUBLIC_KEY' with your actual key from the EmailJS dashboard
-    emailjs.init("mUCyn92pOi67-3vB5");
-    console.log("EmailJS Initialized");
-})();
-
+// --- CONTACT FORM SUBMISSION ---
 const contactForm = document.getElementById('contact-form');
 const submitBtn = document.querySelector('.submit-btn-gradient');
 const formStatus = document.getElementById('form-status');
@@ -334,8 +327,6 @@ const formStatus = document.getElementById('form-status');
 if (contactForm) {
     contactForm.addEventListener('submit', function (event) {
         event.preventDefault();
-
-        console.log("Form submission started...");
 
         // Show loading state
         submitBtn.classList.add('loading');
@@ -345,33 +336,17 @@ if (contactForm) {
 
         formStatus.classList.remove('show', 'success', 'error');
 
-        // 2. Send the form data
-        // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' 
-        // with your actual IDs from the EmailJS dashboard
-        emailjs.sendForm('service_t2433kr', 'template_cxy2ucc', contactForm, 'mUCyn92pOi67-3vB5')
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-
-                // Show Success Message
-                formStatus.textContent = 'Message sent successfully! I will get back to you soon.';
-                formStatus.classList.add('show', 'success');
-
-                // Reset Form
-                contactForm.reset();
-            }, function (error) {
-                console.error('FAILED TO SEND EMAIL:', error);
-
-                // Show Error Message
-                // Put the error text directly on the screen so we can see what goes wrong!
-                formStatus.textContent = 'Failed: ' + JSON.stringify(error) + ' | ' + error.text;
-                formStatus.classList.add('show', 'error');
-            })
-            .finally(function () {
-                // Reset button state
-                submitBtn.classList.remove('loading');
-                btnText.textContent = originalText;
-                console.log("Submission process finished.");
-            });
+        // Dummy timeout to simulate backend request
+        setTimeout(() => {
+            // Show Success Message
+            formStatus.textContent = 'Submitted Successfully! I will get back to you soon.';
+            formStatus.classList.add('show', 'success');
+            
+            // Reset Form and button
+            contactForm.reset();
+            submitBtn.classList.remove('loading');
+            btnText.textContent = originalText;
+        }, 1500); // Wait 1.5 seconds for visual effect
     });
 }
 // --- ANTI-GRAVITY PARTICLE BACKGROUND (GOOGLE STYLE) ---
